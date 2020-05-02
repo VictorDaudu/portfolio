@@ -41,9 +41,8 @@ $(document).ready(function() {
   $('#anime-obj').click(e => {
     $('html').animate({ scrollTop: 0 }, '500');
   });
-});
 
-/************************ Js Plugins ************************/
+  /************************ Js Plugins ************************/
 AOS.init({
   easing: 'ease-in-out-sine'
 });
@@ -51,4 +50,7 @@ AOS.init({
 var Header = document.querySelector('header nav');
 var headroom = new Headroom(Header);
 headroom.init();
+
+});
+
 /********* END OF CODE **********/
