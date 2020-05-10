@@ -1,0 +1,24 @@
+@font-face {
+	font-family: 'OpenSans-Bold';
+	src: url('OpenSans-Bold.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'PlayfairDisplay-Bold';
+	src: url('PlayfairDisplay-Bold.ttf');
+	font-weight: lighter;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Glametrix';
+	src: url('GlametrixLight.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Library3am';
+	src: url('Library3am-5V3Z.otf');
+	font-weight: normal;
+	font-style: normal;
+}

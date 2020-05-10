@@ -1,313 +1,367 @@
-
 /* ANIMATION CSS */
 @keyframes rotate {
-  from {
-    transform: rotate(360deg);
-  }
-  to {
-    transform: rotate(-360deg);
-  }
+	from {
+		transform: rotate(360deg);
+	}
+	to {
+		transform: rotate(-360deg);
+	}
 }
 #slideBar {
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  z-index: 3;
-  background: rgba(0, 0, 1, 0.377);
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	z-index: 5;
+}
+#slideBar #overlay {
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	z-index: -1;
+	background: rgba(1, 1, 6, 0.5);
 }
 #slideBar .sBcontent {
-  width: 50vw;
-  height: 100vh;
-  display: grid;
-  min-width: 240px;
-  padding: 12px;
-  padding-top: 80px;
-  position: relative;
-  align-content: space-between;
-  justify-items: center;
-  text-align: center;
-  background: #fff;
+	width: 68vw;
+	height: 100vh;
+	display: grid;
+	min-width: 240px;
+	max-width: 320px;
+	padding: 5px;
+	padding-top: 80px;
+	position: relative;
+	align-content: space-between;
+	justify-items: center;
+	text-align: center;
+	background: #fff;
 }
+
 .sBcontent .fa-close {
-  padding: 10px;
-  position: absolute;
-  right: 12px;
-  font-size: 22px;
-  cursor: pointer;
+	padding: 14px;
+	position: absolute;
+	right: 5px;
+	font-size: 24px;
+	cursor: pointer;
 }
 .sBcontent .slide-links li {
-  padding: 10px;
-  text-align: center;
+	padding: 10px;
+	text-align: center;
 }
 .sBcontent .slide-links a {
-  color: #000;
-  font-size: 22px;
-  font-weight: bold;
+	color: #000;
+	font-size: 24px;
+	font-weight: bold;
+	transition: all 1s;
 }
 .sBcontent .slide-links a:hover {
-  color: var(--mainColor);
+	color: var(--mainColor);
 }
 .slideBar-social {
-  padding: 10px 0;
+	padding: 20px 0;
 }
 .slideBar-social a {
-  color: var(--mainColor);
-  padding: 10px;
-  font-size: 22px;
+	color: var(--mainColor);
+	padding: 5px;
+	font-size: 28px;
+	transition: all 1s;
 }
 .slideBar-social a:hover {
-  color: #222;
+	color: #222;
 }
 
 /* MAIN CSS */
 main section {
-  padding: 15px 10px;
-  font-size: 110%;
-  line-height: 1.6em;
-  overflow: hidden;
-  font-family: "Segoe UI", Tahoma, sans-serif;
+	padding: 15px 10px;
+	font-size: 110%;
+	line-height: 1.6em;
+	overflow: hidden;
+	background: #eee;
+}
+section > .content {
+	padding: 5px;
+	border-radius: 5px;
+	background: #fff;
+	border: 2px solid #ddd;
 }
 section .heading {
-  display: flex;
-  font-size: 17px;
-  padding: 8px 0;
-  color: var(--mainColor);
-  align-items: center;
-  border-radius: 3px;
+	display: flex;
+	font-size: 17px;
+	padding-bottom: 16px;
+	color: var(--mainColor);
+	align-items: center;
+	border-radius: 3px;
+	font-family: 'PlayfairDisplay-Bold';
 }
 section .heading .line {
-  width: 28px;
-  height: 2px;
-  margin: 0 4px;
-  background: var(--mainColor);
+	width: 28px;
+	height: 2px;
+	margin: 0 4px;
+	background: var(--mainColor);
 }
 section .heading1 {
-  padding: 14px;
-  font-size: 27px;
+	padding: 8px;
+	font-size: 28px;
+	text-align: center;
+	position: relative;
+	margin-bottom: 15px;
+	font-family: 'PlayfairDisplay-Bold';
 }
-section .info {
-  padding: 0 10px;
+section .heading1:after {
+	content: ' ';
+	width: 100px;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	padding: 1px;
+	position: absolute;
+	margin: 2px auto;
+	background: var(--mainColor);
 }
 .info p {
-  padding: 6px 10px;
+	padding: 8px 0;
 }
+p, article {
+  font-size: 26px;
+	font-family: "Glametrix";
+}	
+
 /* ABOUT CSS */
 #about .content > div {
-  margin: 10px;
-  padding: 12px;
-  margin-bottom: 26px;
-  border-radius: 10px;
-  line-height: 1.6em;
-  box-shadow: 1px 1px 5px #888;
+	padding: 15px;
+	line-height: 1.6em;
 }
 #about .image {
-  padding: 0;
-  max-width: 360px;
-  margin: 10px auto;
-  border-radius: 16px;
-  overflow: hidden;
+	padding: 0;
+	border-radius: 6px;
+	max-width: 360px;
+	margin: 10px auto;
+	overflow: hidden;
 }
 #about .image img {
-  padding: 0;
-  transition: all 2s;
+	border-radius: 6px;
+	transition: all 2s 0.5s;
 }
 #about .image:hover img {
-  transform: scale(1.06);
+	transform: scale(1.08);
 }
-#about .content .skills {
-  padding: 25px 15px;
+#about .content .extra {
+	padding: 5px 16px;
 }
 #about .skills ul li {
-  display: flex;
-  justify-content: space-between;
+	display: flex;	
+	font-size: 26px;
+	font-family: "Glametrix";
+	justify-content: space-between;
 }
 #about .skills ul .progress {
-  width: 97%;
-  height: 8px;
-  margin: 8px 10px;
-  position: relative;
-  text-align: right;
-  border-radius: 3px;
-  background: #c4cdd3;
-  margin-bottom: 15px;
+	width: 96%;
+	height: 8px;
+	margin: 8px 10px;
+	position: relative;
+	text-align: right;
+	border-radius: 3px;
+	background: #c4cdd3;
 }
 .skills .progress .bar {
-  width: 95%;
-  height: 8px;
-  padding: 0 10px;
-  position: absolute;
-  border-radius: 3px;
-  background: rgb(11, 98, 230);
+	width: 95%;
+	height: 8px;
+	padding: 0 10px;
+	position: absolute;
+	border-radius: 3px;
+	background: rgb(11, 98, 230);
 }
 .skills .progress .bar.js {
-  width: 85%;
-  background: #25d40e;
+	width: 90%;
+	background: #25d40e;
 }
 .skills .progress .bar.react {
-  width: 75%;
-  background: var(--mainColor);
+	width: 70%;
+	background: var(--mainColor);
 }
 .skills .progress .bar.php {
-  width: 80%;
-  background: #e71a1a;
+	width: 80%;
+	background: #e71a1a;
 }
 .skills .progress .bar.wp {
-  width: 75%;
-  background: #04a4e4;
+	width: 75%;
+	background: #04a4e4;
 }
 .skills .progress .bar.ps {
-  width: 70%;
-  background: #09236b;
+	width: 75%;
+	background: #09236b;
 }
 .skills .progress .bar.cd {
-  width: 90%;
-  background: #7925c7;
+	width: 90%;
+	background: #7925c7;
+}
+#about .education {
+	padding: 20px 0;
+}
+.education dl dt {
+	font-weight: bold;
+}
+.education dl dd {
+	font-size: 27px;
+	padding-left: 20px;
+	font-family: "Glametrix";
 }
 
 /* SERVICE CSS */
 #services .info {
-  padding: 6px 10px;
+	padding: 5px 15px;
 }
 #services .articles {
-  padding: 15px;
+	padding: 5px 15px;
 }
 #services .articles article {
-  margin: 10px;
-  padding: 12px 15px;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  box-shadow: 1px 1px 5px #888;
+	padding: 12px 15px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	border: 1px solid #ddd;
+	box-shadow: 1px 1px 5px #eee;
+	transition: background 1s 0.4s;
 }
 .articles article h4 {
-  padding: 6px 0;
-  font-size: 19px;
+	padding: 6px 0;
+	font-size: 19px;
+		font-family: sans-serif;
 }
 .articles article .fa {
-  color: var(--mainColor);
-  padding: 5px 25px;
-  font-size: 38px;
+	color: var(--mainColor);
+	padding: 5px 25px;
+	font-size: 38px;
 }
+
 /* PORTFOLIO CSS */
-#portfolio {
-  background: linear-gradient(
-      rgba(243, 241, 241, 0.98),
-      rgba(248, 248, 248, 0.95),
-      rgba(248, 248, 248, 0.98)
-    ),
-    url(../images/chart.jpg) center;
-  background-size: cover;
-}
 #portfolio .works {
-  display: grid;
-  padding: 0 10px;
-  justify-content: space-around;
-  grid-template-columns: repeat(auto-fit, minmax(360px, 420px));
+	display: grid;
+	padding: 0 10px;
+	justify-content: space-around;
+	grid-template-columns: repeat(auto-fit, minmax(260px, 270px));
 }
 #portfolio figure {
-  width: 90vw;
-  margin: 12px auto;
-  min-width: 260px;
-  max-width: 320px;
-  margin-bottom: 20px;
-  border-radius: 8px;
-  box-shadow: 1px 1px 5px #aaa;
-  background: #fff;
-  position: relative;
-  overflow: hidden;
+	width: 100%;
+	margin: 15px auto;
+	/* 	max-width: 260px; */
+	border-radius: 26px;
+	position: relative;
+	overflow: hidden;
+	border: 1px solid #aaa;
+	box-shadow: 2px 2px 5px #bbb;
+}
+figure .image img {
 }
 #portfolio figure figcaption {
-  top: 0;
-  width: 100%;
-  height: 100%;
-  display: grid;
-  place-items: center;
-  position: absolute;
-  border-top: 1px solid #aaa;
-  background: rgba(18, 96, 160, 0.7);
-  text-align: center;
-  z-index: 1;
-  opacity: 0;
-  transition: all 2s 0.4s;
+	top: 0;
+	color: #fff;
+	width: 100%;
+	height: 100%;
+	display: grid;
+	place-items: center;
+	position: absolute;
+	border-top: 1px solid #aaa;
+	background: rgba(18, 96, 160, 0.7);
+	text-align: center;
+	z-index: 1;
+	opacity: 0;
+	transition: all 2s 0.4s;
 }
 #portfolio figure a {
-  color: #fff;
+	color: #fff;
 }
-#portfolio figure .image {
-  border: 2px solid #fff;
-  transition: all 1s;
-}
+
 #portfolio figure figcaption .name {
-  padding: 5px;
-  font-size: 28px;
+	padding: 5px;
+	font-size: 28px;
+}
+#portfolio figure figcaption .fa-eye {
+	font-size: 40px;
 }
 #portfolio figure:hover figcaption {
-  opacity: 1;
+	opacity: 1;
 }
-#portfolio figure:hover .image {
-  transform: scale(1.06);
-}
+
 /* CONTACT CSS */
 #contact .contacts {
-  padding: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+	padding: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
 }
 .contacts .cbox {
-  width: 80vw;
-  height: 140px;
-  max-width: 500px;
-  padding: 20px;
-  margin: 20px 10px;
-  text-align: center;
-  border-radius: 8px;
-  font-size: 20px;
-  box-shadow: 1px 1px 5px #bbb;
+	width: 100%;
+	padding: 18px 5px;
+	text-align: center;
+	font-size: 20px;
+}
+.contacts .cbox h4 {
+	padding: 5px;
 }
 .contacts .cbox .fa {
-  font-size: 40px;
-  padding-bottom: 12px;
+	font-size: 40px;
+	padding-bottom: 12px;
 }
-.social > div {
-  display: flex;
-  padding: 8px;
-  margin: 0 10px;
- font-size: 30px;
-  border-radius: 6px;
-  justify-content: space-around;
-  box-shadow: 1px 1px 4px #ddd;
-}
+/* FOOTER CSS */
 footer {
-  padding: 15px;
-  font-family: "Segoe UI", Tahoma, sans-serif;
-  background: #222;
+	padding: 10px 5px;
+	margin-top: 10px;
+	background: #222;
 }
+.social-menu {
+	text-align: center;
+	border-bottom: 1px solid #223;
+}
+.social-menu a {
+	font-size: 29px;
+	margin: 20px 15px;
+	color: #fff;
+	transition: all 1s 0.2s;
+}
+.social-menu a:hover {
+	color: #111;
+}
+
 footer p {
-  color: #fff;
-  text-align: center;
+	color: #fff;
+	font-size: 16px;
+	padding-top: 20px;
+	text-align: center;
 }
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 740px) {
-   #about .content {
-    display: flex;
-    justify-content: space-around;
-  }
-  .content > div {
-    flex: 1;
-  }
-  #services .articles {
-    display: grid;
-    padding: 30px;
-    grid-template-columns: 1fr 1fr;
-  }
-  #services .articles article {
-    margin: 10px;
-    padding: 12px 30px;
-    margin-bottom: 25px;
-  }
-  .contacts .cbox {
-    max-width: 600px;
-  }
+	#about .content {
+		display: flex;
+		justify-content: space-around;
+	}
+	#about .content > div {
+		flex: 1;
+		padding: 10px 30px;
+		max-width: 460px;
+	}
+	#about .content .extra {
+		display: grid;
+		padding-top: 10px;
+	}
+	#services > .content {
+		padding: 5px 25px;
+	}
+	#services .articles {
+		display: grid;
+		padding: 10px 30px;
+		grid-template-columns: 1fr 1fr;
+	}
+	#services .articles article {
+		margin: 10px;
+		padding: 12px 30px;
+		margin-bottom: 25px;
+	}
+	.contacts .cbox {
+		width: 30%;
+	}
+	.social-menu a {
+		margin: 25px;
+	}
 }
