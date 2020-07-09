@@ -1,9 +1,9 @@
 #
 
-## Portfolio Site By Daudu Victor
+## Portfolio Site By Daudu Yusuf
 
 #
 
 Created with Html, Css and JavaScript ( Jquery )
 
-View project at https://VictorDaudu.github.io/portfolio
+View project at https://dauduyusuf.github.io/portfolio/
